@@ -1926,6 +1926,8 @@ func (b *builder) gccArchArgs() []string {
 		return []string{"-m64"}
 	case "arm":
 		return []string{"-marm"} // not thumb
+	case "sh4":
+		return []string{}
 	}
 	return nil
 }
